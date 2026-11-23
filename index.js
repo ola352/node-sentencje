@@ -1,5 +1,6 @@
 import express from 'express';
 import fs from 'node:fs/promises';
+import { sledzenie } from './lib/sledzenie.js';
 
 const PORT = 3000;
 
@@ -19,6 +20,8 @@ app.use((req, res, next) => {
   });
   next();
 });
+
+app.use(sledzenie);
 
 app.get('/api/powitanie', (req, res) => {
   res.send('Witaj z Expressa!');
