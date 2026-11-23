@@ -4,11 +4,14 @@
     "description": "Serwer sentencji – laboratoria Node.js",
     "main": "index.js",
     "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+        "start": "node index.js",
+        "dev": "node --watch index.js"
     },
     "keywords": [],
     "author": "Aleksandra Pawłowska",
     "license": "ISC",
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "express": "^5.3.0"
+    }
 }
